@@ -2,105 +2,94 @@
     background-color: #370617;
     display:flex;
     height: 100vh;
-    margin: 10px;
+    padding: 20px;
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
     }
-.squares__container-large {
-    background-color: #F48C06;
-    margin: 20px;
-    height: 25%;
-    width:100%;
-    border-radius: 8px;
-    display:flex;
-    flex-basis: 468px;
-}
-.squares__container-small  {
-    background-color: #9D0208;
-    min-width: 50px;
-    min-height: 50px;
-    border-radius: 4px;
-    margin:10px;
-    padding: 20px;
-}
-.box--one {
-    display:flex;
-    justify-content: flex-start;
-    align-items:flex-end;
-}
-.box--two {
-    display:flex;
-    justify-content: space-around;
-    align-items: stretch;
-    /*varför flyttar de inte horisontellt?*/
-}
-.box--three {
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    /*varför flyttar de inte horisontellt?*/
-}
-.box--four {
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    /*varför flyttar de inte horisontellt?*/
-}
-#box-four {
-    align-self: flex-end;
-}
-.box--five {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
-}
-#box-five {
-    flex-shrink: -2;
-    /* varför funkar inte det här så att mellersta boxen är mindre?*/
-}
-.box--six {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    /*varför flyttar de inte horisontellt?*/
+    .squares__container-one, .squares__container-two, .squares__container-three,
+    .squares__container-four, .squares__container-five, .squares__container-six {
+        background-color: #F48C06;
+        margin: 20px;
+        height: 160px;
+        width:468px;
+        border-radius: 8px;
+        display:flex;
     }
-#box-six {
-    flex-grow: 2;
-    /* varför funkar inte det här så att mellersta boxen är större?*/
-}
+        .squares__container-small  {
+            background-color: #9D0208;
+            min-width: 50px;
+            min-height: 50px;
+            border-radius: 4px;
+            margin:15px;
+            padding: 20px;
+        }
+    .squares__container-one {
+        justify-content: flex-start;
+        align-items:flex-end;
+    }
+    .squares__container-two {
+        justify-content: center;
+        align-items: stretch;
+    }
+    .squares__container-three {
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .squares__container-four {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .squares__container-five {
+        justify-content: space-evenly;
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+    }
+    .squares__container-six {
+        justify-content: center;
+        align-items: center;
+    }
 .block-circles {
     background-color: #FAA307;
     display:flex;
     height: 100vh;
-    margin: 10px;
+    padding: 20px;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
-.circles__container-one, .circles__container-three, .circles__container-five {
-    background-color: #03071E;
-    margin: 20px;
-    height: 25%;
-    width:100%;
-    display:flex;
-    flex-basis: 273px;
-}
-.circles__container-two, .circles__container-four {
-    background-color: #6A040F;
-    margin: 20px;
-    height: 25%;
-    width:100%;
-    display:flex;
-    flex-basis: 273px;
-}
-.ellipse {
-    background-color: #748CAB;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
-}
+    .circles__container-one, .circles__container-three, .circles__container-five, .circles__container-two, .circles__container-four {
+        background-color: #03071E;
+        margin: 20px;
+        height: 220px;
+        width:273px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .circles__container-two, .circles__container-four {
+        background-color: #6A040F;
+    }
+        .ellipse {
+            background-color: #748CAB;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+    .circles__container-two {
+        flex-wrap: wrap-reverse;
+        flex-direction: row-reverse;
+    }
+    .circles__container-three {
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .circles__container-four {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .circles__container-five {
+        justify-content: center;
+        align-items: center;
+    }
